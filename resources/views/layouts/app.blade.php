@@ -37,7 +37,6 @@
                             <a href="{{ route('admin.users.index')}}">Manage Users</a>
                         </li>
                     </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
@@ -74,7 +73,8 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
+            @include('partials.alerts')
             @yield('content')
         </main>
     </div>
